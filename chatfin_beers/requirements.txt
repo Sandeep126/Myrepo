@@ -1,5 +1,7 @@
 Python==3.7.0
-virtualenv-16.6.1
+virtualenv==16.6.1
 Django==2.1.5
 
 djangorestframework==3.9.4
+
+
