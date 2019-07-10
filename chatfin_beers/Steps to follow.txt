@@ -1,0 +1,30 @@
+1) install python if it is not installed (I am using 3.7.0)
+2) install virtual environment virtualenv-16.6.1 
+2) Create a folder mkdir Chatfin_Project && cd Chatfin_Project
+3) Create virtual env virtualenv venv(named venv)
+4) Go to scripts folder and run the activate file eg(C:\Chatfin_Project\venv\Scripts\activate.bat)
+5) Install Django -> pip install Django==2.1.5
+6) Install rest framework -> pip install djangorestframework (jangorestframework-3.9.4)
+6) After setting up your development environment, go ahead and create a django project:django-admin startproject chatfin_beers
+7) cd chatfin_beers
+7) Then create a django app : django-admin startapp beers
+8) We will use python inbuild database sqlite for this project.
+9) Now, open the api/settings.py file and add the rest_framework and beers apps to INSTALLED_APPS
+9) open each file and paste the code present in the corresponding name file in the zipped folder (chatfin_beers.zip)
+10)To create database according to models.py  do the following two commands:
+	> py manage.py makemigrations
+	> py manage.py migrate
+11) It is always advisable to create a superuser for a project: py manage.py createsuperuser (for chatfin beer project this step is not necessary) 
+12) py manage.py runserver
+	>check if the paths are showing at the url http://127.0.0.1:8000/ 
+	>Hola!!! App is ready
+13) Play around the app with below url: 
+    	>To create new user follow the link : http://127.0.0.1:8000/user/
+	>To create and view beers follow the link : http://127.0.0.1:8000/beers/
+	>To review a beer follow the link : http://127.0.0.1:8000/review/
+	>To view a list of rating for a beer follow the link :http://127.0.0.1:8000/beers/<Beer_name>	
+
+Notes:  1.We should do automated testing by writing our test code in tests folder. I have not done it 
+	2.Open Chatfin_Beer_App_Test_Results.doc and go through the test cases
+	
+	
